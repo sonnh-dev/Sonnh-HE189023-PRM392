@@ -69,15 +69,15 @@ class _GenreScreenState extends State<GenreScreen> {
     });
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Lab 6 – Building a Responsive Movie Genre Browsing Screen')),
+      appBar: AppBar(
+        title: const Text(
+          'Lab 6 – Building a Responsive Movie Genre Browsing Screen',
+        ),
+      ),
       body: SafeArea(
         child: LayoutBuilder(
           builder: (context, constraints) {
             final isWide = constraints.maxWidth >= 800;
-            double textScale = MediaQuery.textScalerOf(context).scale(1);
-            if (textScale < 1) {
-              textScale = 1;
-            }
 
             return ListView(
               padding: const EdgeInsets.all(16),
@@ -159,20 +159,16 @@ class _GenreScreenState extends State<GenreScreen> {
                   ],
                 ),
                 const SizedBox(height: 20),
-                
+
                 if (displayedMovies.isEmpty)
                   const Center(child: Text('No movies found.'))
                 else if (isWide)
                   GridView.count(
                     crossAxisCount: 2,
                     crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    mainAxisExtent: 220 * textScale,
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
-                    children: displayedMovies.map((movie) {
-                      return _buildMovieCard(movie);
-                    }).toList(),
+                    children: displayedMovies.map(_buildMovieCard).toList(),
                   )
                 else
                   ...displayedMovies.map((movie) => _buildMovieCard(movie)),
@@ -195,10 +191,7 @@ class _GenreScreenState extends State<GenreScreen> {
             SizedBox(
               width: 80,
               height: 120,
-              child: Image.network(
-                movie.posterUrl,
-                fit: BoxFit.cover,
-              ),
+              child: Image.network(movie.posterUrl, fit: BoxFit.cover),
             ),
             const SizedBox(width: 12),
             Expanded(
