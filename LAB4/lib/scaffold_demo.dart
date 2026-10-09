@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ScaffoldDemo extends StatefulWidget {
-  const ScaffoldDemo({super.key, required this.onThemeChanged});
+  const  ScaffoldDemo({super.key, required this.onThemeChanged});
 
   final ValueChanged<bool> onThemeChanged;
 
