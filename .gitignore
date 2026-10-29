@@ -1,0 +1,28 @@
+# Dart / Flutter: generated dependencies and build output
+**/.dart_tool/
+**/build/
+**/coverage/
+**/.pub/
+**/.pub-cache/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.widget_preview/
+
+# Android: local paths and caches
+**/.gradle/
+**/.kotlin/
+**/.cxx/
+**/android/local.properties
+
+# IDE and operating system files
+**/.idea/
+*.iml
+*.ipr
+*.iws
+*.log
+.DS_Store
+Thumbs.db
+
+# Local source backups
+/archives/

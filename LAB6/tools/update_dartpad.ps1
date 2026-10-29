@@ -19,4 +19,4 @@ foreach ($sourceFile in $sourceFiles) {
 }
 $outputDirectory = Join-Path $projectRoot 'dartpad'
 New-Item -ItemType Directory -Path $outputDirectory -Force | Out-Null
-Set-Content -LiteralPath (Join-Path $outputDirectory 'main.dart') -Value $parts -Encoding utf8
+Set-Content -LiteralPath (Join-Path $outputDirectory 'main.dart') -Value (($parts -join [Environment]::NewLine).TrimEnd()) -Encoding utf8
