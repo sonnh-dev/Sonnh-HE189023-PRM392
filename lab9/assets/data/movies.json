@@ -1,0 +1,8 @@
+[
+  {"id": 1, "title": "Zootopia 2", "year": 2025, "genres": ["Adventure", "Animation", "Comedy"], "rating": 7.3},
+  {"id": 2, "title": "KPop Demon Hunters", "year": 2025, "genres": ["Animation", "Action", "Adventure", "Comedy"], "rating": 7.4},
+  {"id": 3, "title": "Elio", "year": 2025, "genres": ["Animation", "Action", "Adventure", "Comedy", "Sci-Fi"], "rating": 6.6},
+  {"id": 4, "title": "Superman", "year": 2025, "genres": ["Action", "Adventure", "Sci-Fi"], "rating": 7.0},
+  {"id": 5, "title": "F1: The Movie", "year": 2025, "genres": ["Action", "Drama", "Sport"], "rating": 7.6},
+  {"id": 6, "title": "Weapons", "year": 2025, "genres": ["Drama", "Horror", "Mystery"], "rating": 7.4}
+]
